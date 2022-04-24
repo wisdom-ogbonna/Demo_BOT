@@ -1,0 +1,28 @@
+.sale-banner {
+    position: fixed;
+    bottom: 0px;
+    left: -1px;
+    z-index: 2147483647;
+    width: calc(100% + 2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 4px;
+    height: 60px;
+}
+
+.sale-banner__close {
+    min-width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .sale-banner {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sale-banner .sale-banner__close {
+        min-width: 30px;
+    }
+}
